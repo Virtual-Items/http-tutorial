@@ -13,12 +13,14 @@ switch ($AcceptLanguage) {
 
     // SPANISH
     case 'es-CO':
+        header('Content-Language: es-CO');
         echo json_encode(array( 'data' => 'hola mundo' ));
         break;
     
     // ENGLISH
     case 'en-US':
     default:
+        header('Content-Language: en-US');
         echo json_encode(array( 'data' => 'hello world' ));
         break;
 
